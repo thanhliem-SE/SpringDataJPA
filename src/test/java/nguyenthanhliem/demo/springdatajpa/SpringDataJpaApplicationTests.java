@@ -12,7 +12,7 @@ class SpringDataJpaApplicationTests {
     private UserRepository userRepository;
 
     @Test
-    public void getUsersByNativeQuery(){
-        System.out.println("Get Users By Native Query: " + userRepository.getUsers());
+    public void getUsersByJPQL(){
+        System.out.println("Get Users By JPQL: " + userRepository.getUsers());
     }
 }

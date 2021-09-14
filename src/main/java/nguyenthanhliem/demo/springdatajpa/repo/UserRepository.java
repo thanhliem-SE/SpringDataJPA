@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-    @Query(value = "select * from user", nativeQuery = true)
+    @Query(value = "From User")
     public List<User> getUsers();
 }
